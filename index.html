@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lawyer's Website</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="#home">
+                <img src="firmLogo.jpg" alt="Law Firm Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#criminal-law">Criminal Law</a></li>
+                        <li><a href="#family-law">Family Law</a></li>
+                        <li><a href="#business-law">Business Law</a></li>
+                        <li><a href="#real-estate-law">Real Estate Law</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+            <div id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div>
+            <h1>Welcome to Our Law Firm</h1>
+            <p>Providing legal solutions tailored to your needs.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>
+                <h3>Criminal Law</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in turpis eu erat luctus eleifend vel vel nunc.</p>
+            </li>
+            <li>
+                <h3>Family Law</h3>
+                <p>Integer vitae felis euismod, fermentum velit et, dignissim libero. Quisque tincidunt ante non ultricies bibendum.</p>
+            </li>
+            <li>
+                <h3>Business Law</h3>
+                <p>Curabitur nec justo at justo dapibus iaculis. Duis vel libero vel ligula cursus fermentum in vel erat.</p>
+            </li>
+            <li>
+                <h3>Real Estate Law</h3>
+                <p>Proin vel libero et lacus cursus varius. Sed euismod ex at justo viverra, at facilisis augue tincidunt.</p>
+            </li>
+        </ul>
+    </section>    
+
+    <!-- About section -->
+    <section id="about">
+        <div class="about-column">
+            <h2>About Us</h2>
+            <p>
+                Welcome to our law firm! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin consectetur, odio a consectetur suscipit, purus leo posuere nisi, nec
+                euismod
+                sem tortor vel neque.
+            </p>
+            <!-- Additional content for the first column goes here -->
+        </div>
+        <div class="about-column">
+            <!-- Additional content for the second column goes here -->
+            <p>
+                Our team of experienced lawyers is dedicated to providing high-quality legal
+                services
+                across various practice areas. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+            </p>
+            <p>
+                At our law firm, we prioritize client satisfaction and strive to achieve the best
+                possible outcomes for our clients. Lorem ipsum dolor sit amet, consectetur
+                adipiscing
+                elit.
+            </p>
+        </div>
+    </section>
+
+    <!-- Caption section -->
+    <section id="caption">
+        <img src="firmCaption.jpg" alt="Image Caption">
+        <p>This is a brief caption describing the image or video content. Add any additional information as needed.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Law Firm. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

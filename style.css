@@ -1,0 +1,305 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+#logo img {
+    max-width: 100px;
+}
+
+#logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center; /* Center align the dropdown items */
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 10px;
+    margin-right: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding-left: 0px;
+    width: max-content;
+}
+
+/* Optional: Add hover effect on navigation links */
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#navLinks {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    top: 80px;
+    right: 20px;
+    width: 180px;
+    padding: 2px;
+}
+
+#navLinks a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+}
+#navLinks a:hover {
+    border-bottom: none;
+    background-color: #333;
+}
+
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#home {
+    background-image: url('homeBackground.jpg');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Set text color to white for better visibility */
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding as needed */
+}
+#home div {
+    background: rgba(0,0,0,0.5);
+    padding: 40px 0;
+}
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+}
+
+
+#services {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center; /* Center the content */
+}
+
+#services h2 {
+    color: #333;
+    margin-bottom: 20px; /* Add some space between the heading and the list */
+}
+
+#services ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Use flexbox to display items in a row */
+    justify-content: center; /* Center the list items horizontally */
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    #services ul {
+        flex-direction: column;
+    }
+}
+
+#services li {
+    font-size: 18px;
+    margin: 10px; /* Add some space between list items */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Optional: Add hover effect on list items */
+#services li:hover {
+    background-color: #f0f0f0;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    #about {
+        flex-direction: column;
+    }
+    .about-column {
+        width: 100% !important;
+    }
+}
+.about-column {
+    width: 48%; /* Adjust the width of the columns as needed */
+}
+
+.about-column h2 {
+    margin-bottom: 15px;
+}
+
+.about-column p {
+    text-align: justify;
+}
+
+/* Add this style for the caption section */
+#caption {
+    text-align: center;
+}
+
+#caption img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
+
+#caption p {
+    margin-top: 20px;
+    color: #555;
+    font-size: 18px;
+}
+
+ /* Style for the contact section */
+
+#contact {
+    background-color: #333;
+}
+ 
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    text-align: center;
+    color: #fff;
+}
+
+#contact-form label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+#contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
